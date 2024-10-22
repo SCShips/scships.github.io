@@ -15,6 +15,7 @@ body {
     max-width: 1200px;
     margin: 50px auto;
     text-align: center;
+    padding-right: 150px; /* Added padding to prevent overlap with buttons */
 }
 
 .description {
@@ -43,7 +44,7 @@ body {
 }
 
 .screenshot {
-    width: 100%; /* Increase the width to make screenshots larger */
+    width: 100%; /* Full width for larger screenshots */
     margin: 10px;
     border-radius: 5px;
     box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1); /* Light shadow */
@@ -59,7 +60,7 @@ body {
     margin: 10px;
     font-size: 1.2rem;
     color: rgb(58, 58, 58); /* Button text in white */
-    background-color: #ff8800; /* Primary blue button */
+    background-color: #ff8800; /* Primary button color */
     text-decoration: none;
     border-radius: 5px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Darker shadow for buttons */
@@ -67,5 +68,14 @@ body {
 }
 
 .btn:hover {
-    background-color: #a36a00; /* Darker blue on hover */
+    background-color: #a36a00; /* Darker color on hover */
+}
+
+.top-right-button {
+    position: absolute;
+    top: 10px;
+    right: 20px; /* Moved buttons inward to avoid edge */
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 }
