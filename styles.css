@@ -65,6 +65,7 @@ body {
     border-radius: 5px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Darker shadow for buttons */
     transition: background-color 0.3s ease;
+    text-align: center; /* Ensure text is centered */
 }
 
 .btn:hover {
