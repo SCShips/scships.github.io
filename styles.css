@@ -1,82 +1,58 @@
+/* Reset default styles */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
-
-body {
+  }
+  
+  body {
     font-family: Arial, sans-serif;
-    background-color: #2c2c2c; /* Dark gray background */
-    color: #f0f0f0; /* Light text color */
-}
-
-.container {
-    width: 80%;
-    max-width: 1200px;
-    margin: 50px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #2e2e2e; /* Dark background */
+    color: #e0e0e0; /* Light text for contrast */
+  }
+  
+  .container {
+    max-width: 600px;
     text-align: center;
-    padding-right: 150px; /* Added padding to prevent overlap with buttons */
-}
-
-.description {
-    margin-bottom: 50px;
-}
-
-.description h1 {
-    font-size: 2.5rem;
-    margin-bottom: 10px;
-    color: #ff9900; /* White for the main heading */
-}
-
-.description p {
-    font-size: 1.2rem;
-    color: #dcdcdc; /* Lighter gray for text */
-}
-
-.screenshots {
-    margin-bottom: 50px;
-}
-
-.screenshots h2 {
-    font-size: 2rem;
+  }
+  
+  h1 {
+    font-size: 3.5rem;
+    font-weight: bold;
+    color: #ffa500; /* Orange color for main title */
     margin-bottom: 20px;
-    color: #ff9900; /* White for the screenshot section heading */
-}
-
-.screenshot {
-    width: 100%; /* Full width for larger screenshots */
-    margin: 10px;
-    border-radius: 5px;
-    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1); /* Light shadow */
-}
-
-.buttons {
-    margin-top: 30px;
-}
-
-.btn {
-    display: inline-block;
-    padding: 15px 30px;
-    margin: 10px;
-    font-size: 1.2rem;
-    color: rgb(58, 58, 58); /* Button text in white */
-    background-color: #ff8800; /* Primary button color */
-    text-decoration: none;
-    border-radius: 5px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Darker shadow for buttons */
-    transition: background-color 0.3s ease;
-    text-align: center; /* Ensure text is centered */
-}
-
-.btn:hover {
-    background-color: #a36a00; /* Darker color on hover */
-}
-
-.top-right-button {
-    position: absolute;
-    top: 10px;
-    right: 20px; /* Moved buttons inward to avoid edge */
+  }
+  
+  .description {
+    font-size: 1rem;
+    color: #d0d0d0;
+    margin-bottom: 30px;
+  }
+  
+  .button-container {
     display: flex;
     flex-direction: column;
-    gap: 10px;
-}
+    gap: 15px;
+  }
+  
+  .button {
+    padding: 15px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #3a3a3a; /* Same color as background */
+    background-color: #ff8800; /* Orange button background */
+    text-decoration: none;
+    border-radius: 5px;
+    text-align: center;
+    transition: background-color 0.3s, transform 0.2s;
+  }
+  
+  .button:hover {
+    background-color: #e69500; /* Darker shade on hover */
+    transform: scale(1.05);
+  }
+  
